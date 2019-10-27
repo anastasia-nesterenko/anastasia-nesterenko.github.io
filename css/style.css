@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed|Roboto+Mono&display=swap');
+:root {
+/*  
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+*/
+
+--gray-dark: #404040;
+--light-purple: #c290d2;
+
+--font-family-sans-serif: 'Indie Flower', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+--font-family-monospace: 'Roboto Mono', SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+--font-family-text: var(--font-family-monospace)
+}
+
+.flower-font {
+    font-family: 'Indie Flower'
+}
+
+.animated {
+    visibility: visible !important;
+}
+
+.site-header .animated {
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
+body {
+    font-family: var(--font-family-text);
+}
+
+.site-header {
+    background-position: center center;
+}
+
+.site-header .page-section-title {
+    font-size: 6em;
+    font-family: var(--font-family-sans-serif);
+    font-weight: 150;
+    color: var(--light-purple);
+}
+
+.page-section-title {
+    font-size: 4em;
+    color: var(--gray-dark);
+    font-family: var(--font-family-sans-serif);
+}
+
+.site-header .page-section-text {
+    font-size: 1.2em;
+}
+
+.site-header .nav-link {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+
+.site-header .nav-link:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--yellow);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+}
+.site-header .nav-link:hover:before {
+    visibility: visible;
+    left: 0;
+    transform: scaleX(1);
+}
+
+.layout-projects .layout-image {
+    max-width: 200px;
+}
+
+.layout-projects .layout-title {
+    color: var(--purple);
+    font-family: var(--font-family-sans-serif);
+    font-weight: 200;
+    font-size: 1.6em;
+}
+
+#page-carousel {
+    background: var(--light-purple);
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    columns: var(--light-purple);
+    background-color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(90%);
+}
+
+@media screen and (min-width: 768px) {
+    #page-floater {
+        margin: 150px 0 150px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .site-header .page-section-title {
+        font-size: 3em;
+        font-family: var(--font-family-sans-serif);
+        font-weight: 150;
+        color: var(--light-purple)
+    }
+}
+
+.layout-social .layout-icon{
+    font-size: 2em;
+}
+
+.carousel-item .education-title, .work-title, .card-title {
+    color: var(--purple);
+    font-family: var(--font-family-sans-serif);
+    font-weight: 200;
+    font-size: 1.6em;
+}
+
+.carousel-item .education-text, .work-text {
+    font-size: 1.2em;
+    align-items: center;   
+}
+
+.avatar-image {
+    max-width: 150px;
+}
+.carousel-item .layout-image {
+    max-width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageCenterAlign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
