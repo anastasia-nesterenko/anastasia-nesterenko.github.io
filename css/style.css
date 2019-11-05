@@ -40,7 +40,8 @@
 }
 
 .flower-font {
-    font-family: 'Indie Flower'
+    font-family: 'Indie Flower';
+    font-display: swap;
 }
 
 .animated {
@@ -54,6 +55,7 @@
 
 body {
     font-family: var(--font-family-text);
+    font-display: swap;
 }
 
 .site-header {
@@ -63,6 +65,7 @@ body {
 .site-header .page-section-title {
     font-size: 6em;
     font-family: var(--font-family-sans-serif);
+    font-display: swap;
     font-weight: 150;
     color: var(--light-purple);
 }
@@ -71,6 +74,7 @@ body {
     font-size: 4em;
     color: var(--gray-dark);
     font-family: var(--font-family-sans-serif);
+    font-display: swap;
 }
 
 .site-header .page-section-text {
@@ -109,6 +113,7 @@ body {
 .layout-projects .layout-title {
     color: var(--purple);
     font-family: var(--font-family-sans-serif);
+    font-display: swap;
     font-weight: 200;
     font-size: 1.6em;
 }
@@ -140,6 +145,7 @@ body {
     .site-header .page-section-title {
         font-size: 3em;
         font-family: var(--font-family-sans-serif);
+        font-display: swap;
         font-weight: 150;
         color: var(--light-purple)
     }
@@ -152,6 +158,7 @@ body {
 .carousel-item .education-title, .work-title, .card-title {
     color: var(--purple);
     font-family: var(--font-family-sans-serif);
+    font-display: swap;
     font-weight: 200;
     font-size: 1.6em;
 }
