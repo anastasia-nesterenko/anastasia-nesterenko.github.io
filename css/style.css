@@ -155,7 +155,7 @@ body {
     font-size: 2em;
 }
 
-.carousel-item .education-title, .work-title, .card-title {
+.carousel-item .education-title, .work-title, .card-title, .screen-title {
     color: var(--purple);
     font-family: var(--font-family-sans-serif);
     font-display: swap;
@@ -163,7 +163,7 @@ body {
     font-size: 1.6em;
 }
 
-.carousel-item .education-text, .work-text {
+.carousel-item .education-text, .work-text, .screen-text {
     font-size: 1.2em;
     align-items: center;   
 }
@@ -177,8 +177,19 @@ body {
     align-items: center;
 }
 
+.carousel-item .layout-image-right {
+    max-width: 150px;
+    justify-content: right;
+    align-items: right;
+}
+
 .imageCenterAlign{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
 }
