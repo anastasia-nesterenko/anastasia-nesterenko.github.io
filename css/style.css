@@ -63,7 +63,7 @@ body {
 }
 
 .site-header .page-section-title {
-    font-size: 6em;
+    font-size: 4.5em;
     font-family: var(--font-family-sans-serif);
     font-display: swap;
     font-weight: 150;
@@ -71,7 +71,7 @@ body {
 }
 
 .page-section-title {
-    font-size: 4em;
+    font-size: 3.5em;
     color: var(--gray-dark);
     font-family: var(--font-family-sans-serif);
     font-display: swap;
@@ -193,3 +193,7 @@ body {
     margin: 0 auto;
     width:80% /* value of your choice which suits your alignment */
 }
+
+.work-title a, .education-title a {
+    color: var(--purple);
+} 
